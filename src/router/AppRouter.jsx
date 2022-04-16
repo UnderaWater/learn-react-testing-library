@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AboutPage from '../pages/AboutPage';
 import ErrorPage from '../pages/ErrorPage';
+import HelloWorld from '../pages/HelloWorld';
 import MainPage from '../pages/MainPage';
 import UserPage from '../pages/UserPage';
 import Users from '../users/Users';
@@ -14,6 +15,7 @@ const AppRouter = () => {
             <Route path='/about' element={<AboutPage />} />
             <Route path='/users' element={<Users />} />
             <Route path='/users/:id' element={<UserPage />} />
+            <Route path='/hello' element={<HelloWorld />} />
             <Route path='/*' element={<ErrorPage />} />
         </Routes>
     )
