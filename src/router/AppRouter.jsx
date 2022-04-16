@@ -4,7 +4,7 @@ import AboutPage from '../pages/AboutPage';
 import ErrorPage from '../pages/ErrorPage';
 import MainPage from '../pages/MainPage';
 import UserPage from '../pages/UserPage';
-import Users from '../users/users';
+import Users from '../users/Users';
 
 
 const AppRouter = () => {
