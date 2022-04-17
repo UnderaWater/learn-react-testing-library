@@ -7,7 +7,7 @@ class HelloPage extends Page {
     }
 
     get searchInput() {
-        return $('#toggle');
+        return $('#search');
     }
 
     get helloTitle() {
@@ -16,9 +16,9 @@ class HelloPage extends Page {
 
     async toggleTitleWithInput(text) {
         await this.searchInput.setValue(text);
-        await this.toggleBtn.click();
+        await this.toggleBtn.click()
     }
-    
+
     open() {
         return super.open('/hello');
     }
